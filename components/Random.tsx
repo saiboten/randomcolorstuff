@@ -5,7 +5,16 @@ import { useState } from "react";
 export const Random: React.FC = () => {
   const [randomText, setRandomText] = useState("");
 
-  const options: string[] = ["Gul", "Oransje", "Mørkeoransje", "Alle", "Ingen"];
+  const options: string[] = [
+    "Gul",
+    "Gul",
+    "Oransje",
+    "Oransje",
+    "Rød",
+    "Rød",
+    "Alle",
+    "Ingen",
+  ];
 
   const handleClick = () => {
     const randomOption = options[Math.floor(Math.random() * options.length)];
